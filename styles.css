@@ -1,0 +1,170 @@
+html {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #0a0a0a;
+  color: #a1a1a1;
+  font-family: sans-serif, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  gap: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  line-height: 1em;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+  color: #fafafa;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.1em;
+  line-height: 1em;
+  margin: 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: #fafafa;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: 600;
+  color: #fafafa;
+  margin: 0px;
+}
+
+a {
+    color: lightskyblue;
+    padding: 0.25em 0em 0.25em 0.5em ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: lightskyblue;
+    border-radius: 0.1em;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 1em;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  padding: 1.5em;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.9em;
+  background-color: #171717;
+}
+
+.item.input-item .title {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #fafafa;
+  margin: 0em;
+}
+
+.item.input-item .label {
+  font-size: 1em;
+  font-weight: 500;
+  color: #fafafa
+}
+
+.item-container .item.not-applicable {
+  opacity: 0.5;
+}
+
+.item.output-item p.title {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: #fafafa;
+  font-weight: 600;
+}
+
+.item.output-item .subtitle {
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0em;
+  margin-block-start: 0.5em;
+}
+
+.item .big-num {
+  color: #fafafa;
+  font-size: 2em;
+  line-height: 1em;
+  margin-block-start: 0.25em;
+  font-weight: 600;
+}
+
+.item .explainer {
+  color: #fafafa;
+  font-size: 1em;
+}
+
+.item exact {
+  font-size: 1em;
+  line-height: 1.1em;
+}
+
+.item p {
+  font-size: 1em;
+  margin: 0em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0em;
+}
+
+.item b {
+  color: #fafafa;
+  font-size: 1.1em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+.item.percent b {
+  font-size: 1.3em;
+}
+
+
+
